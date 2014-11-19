@@ -7,16 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
-#import <CoreLocation/CoreLocation.h>
 
-IBOutlet MKMapView* mapView;
-
-@interface ViewController : UIViewController<MKMapViewDelegate> {
-    MKMapView* mapView;
-}
-
-@property (nonatomic, retain) IBOutlet MKMapView* mapView;
+@interface ViewController : UIViewController
 
 @end
 

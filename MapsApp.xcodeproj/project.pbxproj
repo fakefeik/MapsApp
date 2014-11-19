@@ -14,7 +14,9 @@
 		8407E44A1A1A7BF700AA5F3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8407E4491A1A7BF700AA5F3F /* Images.xcassets */; };
 		8407E44D1A1A7BF700AA5F3F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8407E44B1A1A7BF700AA5F3F /* LaunchScreen.xib */; };
 		8407E4591A1A7BF700AA5F3F /* MapsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8407E4581A1A7BF700AA5F3F /* MapsAppTests.m */; };
-		840CC2681A1A896A005DC13B /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 840CC2671A1A896A005DC13B /* View.xib */; };
+		8410678A1A1B8D22009A8091 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841067891A1B8D22009A8091 /* MapViewController.m */; };
+		8410678C1A1B8D8A009A8091 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8410678B1A1B8D8A009A8091 /* MapView.xib */; };
+		8410678E1A1B9065009A8091 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8410678D1A1B9065009A8091 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +43,10 @@
 		8407E4521A1A7BF700AA5F3F /* MapsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8407E4571A1A7BF700AA5F3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8407E4581A1A7BF700AA5F3F /* MapsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsAppTests.m; sourceTree = "<group>"; };
-		840CC2671A1A896A005DC13B /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		841067881A1B8D22009A8091 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		841067891A1B8D22009A8091 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		8410678B1A1B8D8A009A8091 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		8410678D1A1B9065009A8091 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8410678E1A1B9065009A8091 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +71,7 @@
 		8407E4301A1A7BF600AA5F3F = {
 			isa = PBXGroup;
 			children = (
+				8410678D1A1B9065009A8091 /* MapKit.framework */,
 				8407E43B1A1A7BF700AA5F3F /* MapsApp */,
 				8407E4551A1A7BF700AA5F3F /* MapsAppTests */,
 				8407E43A1A1A7BF700AA5F3F /* Products */,
@@ -91,7 +98,9 @@
 				8407E4491A1A7BF700AA5F3F /* Images.xcassets */,
 				8407E44B1A1A7BF700AA5F3F /* LaunchScreen.xib */,
 				8407E43C1A1A7BF700AA5F3F /* Supporting Files */,
-				840CC2671A1A896A005DC13B /* View.xib */,
+				841067881A1B8D22009A8091 /* MapViewController.h */,
+				841067891A1B8D22009A8091 /* MapViewController.m */,
+				8410678B1A1B8D8A009A8091 /* MapView.xib */,
 			);
 			path = MapsApp;
 			sourceTree = "<group>";
@@ -202,8 +211,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840CC2681A1A896A005DC13B /* View.xib in Resources */,
 				8407E4481A1A7BF700AA5F3F /* Main.storyboard in Resources */,
+				8410678C1A1B8D8A009A8091 /* MapView.xib in Resources */,
 				8407E44D1A1A7BF700AA5F3F /* LaunchScreen.xib in Resources */,
 				8407E44A1A1A7BF700AA5F3F /* Images.xcassets in Resources */,
 			);
@@ -226,6 +235,7 @@
 				8407E4451A1A7BF700AA5F3F /* ViewController.m in Sources */,
 				8407E4421A1A7BF700AA5F3F /* AppDelegate.m in Sources */,
 				8407E43F1A1A7BF700AA5F3F /* main.m in Sources */,
+				8410678A1A1B8D22009A8091 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
